@@ -1,7 +1,4 @@
 import React from 'react';
-// import Cards from './components/Cards/Cards'
-// import Chart from './components/Chart/Chart'
-// import CountryPicker from './components/CountryPicker/CountryPicker'
 import { Cards, Chart, CountryPicker} from './components'
 import styles from './App.module.css'
 import { fetchData} from './api';
@@ -16,20 +13,12 @@ class App extends React.Component {
     }
 
     async componentDidMount() {
-        const fetchedData = await fetchData()
-        // console.log(fetchedData)
+        const fetchedData = await fetchData()      
         this.setState({data: fetchedData})
-    }
-    // componentWillUnmount(){
-    //   console.log("component unmounted")
-    // }
+    }   
   
-    handleChangeCountry = async(country) =>{
-    //   const fetchData= await fetchDataByCountry(country)
-    //   this.setState({data: fetchData})
-    // //   console.log("s",fetchCountryData)
-    const fetchedData = await fetchData(country)
-    // console.log(fetchedData)
+    handleChangeCountry = async(country) =>{    
+    const fetchedData = await fetchData(country)    
     this.setState({data: fetchedData, country:country})
     }
     componentWillUnmount(){

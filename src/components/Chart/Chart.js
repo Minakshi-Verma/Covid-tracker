@@ -3,21 +3,16 @@ import {fetchDailyData} from '../../api';
 import { Line, Bar } from 'react-chartjs-2';
 import styles from './Chart.module.css'
 
-
 const Chart = ({data:{confirmed, recovered, deaths}, country}) =>{
-    // console.log("myProps", {data, country})
+    
     const [dailyData, setDailyData] = useState([])
 
     useEffect (() => {
         const fetchAPI = async () => {
-            setDailyData(await fetchDailyData());
-            // setDailyData(initialDailyData)                   
-        }
-        //   console.log("useState data updated", dailyData)
+            setDailyData(await fetchDailyData());                             
+        }       
           fetchAPI() 
-
-    },[])
-    console.log("useState data updated", dailyData)
+    },[]) 
 
     //building the line Chart for global data   
     const lineChart = (
@@ -48,8 +43,6 @@ const Chart = ({data:{confirmed, recovered, deaths}, country}) =>{
     )
 
     //building the bar chart for data from individual country
-    console.log({confirmed, recovered, deaths})
-
     const barChart = (
         //checking id data exists since only then, barchart will display
         confirmed 
