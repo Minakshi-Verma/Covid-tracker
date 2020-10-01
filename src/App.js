@@ -4,7 +4,7 @@ import React from 'react';
 // import CountryPicker from './components/CountryPicker/CountryPicker'
 import { Cards, Chart, CountryPicker} from './components'
 import styles from './App.module.css'
-import { fetchData} from './api'
+import { fetchData, fetchDataByCountry} from './api'
 
 
 class App extends React.Component {
@@ -18,18 +18,29 @@ class App extends React.Component {
         // console.log(fetchedData)
         this.setState({data: fetchedData})
     }
-
+    // componentWillUnmount(){
+    //   console.log("component unmounted")
+    // }
+  
     handleChangeCountry = async(country) =>{
-       console.log(country)
+    //   const fetchData= await fetchDataByCountry(country)
+    //   this.setState({data: fetchData})
+    // //   console.log("s",fetchCountryData)
+    const fetchedData = await fetchData(country)
+    // console.log(fetchedData)
+    this.setState({data: fetchedData, country:country})
     }
+    componentWillUnmount(){
+        console.log("component unmounted")
+      }
     render(){
-        const {data} = this.state
+        const {data, country} = this.state
         return (
             //while using App.module.css , we use dynamic className in the following format.
             //.module ensures , styles are applied exactly where they are intended for.
             <div className = {styles.container}>
-               <Cards  data = {data}/>
-               <Chart />
+               <Cards  data = {data}  />
+               <Chart data = {data} country= {country}  />
                <CountryPicker handleChangeCountry= {this.handleChangeCountry}/>
             </div>
         )

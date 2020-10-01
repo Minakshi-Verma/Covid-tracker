@@ -5,8 +5,8 @@ import cx from 'classnames';
 
 import styles from './Cards.module.css'
 
-const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) =>{
-    // console.log("props", props)
+const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}, country}) =>{
+    console.log("props========>",country)
     if(!confirmed){
         return 'Loading...'
     }
