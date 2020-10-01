@@ -4,7 +4,7 @@ import React from 'react';
 // import CountryPicker from './components/CountryPicker/CountryPicker'
 import { Cards, Chart, CountryPicker} from './components'
 import styles from './App.module.css'
-import { fetchData, fetchDataByCountry} from './api';
+import { fetchData} from './api';
 
 import coronaImage from '../src/images/image.png';
 
