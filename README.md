@@ -3,11 +3,13 @@
  
 
 Covid tracker provides the records of COVID-19 cases globally as well as based on a selected country. We are fetching live COVID-19 data (from a public API) for the number of infected, recovered, and death cases. In addition to numeric data, results are diplayed on charts to provide better visibibility. The application is fully responsive and styled using material UI.
+ 
+ ### Desktop view <br />
+<img src="./img/Screenshot (10).png" alt="desktop" width="600">
+ <br/>
 
-<img src="./img/Screenshot (10).png" alt="desktop" width="250">
- <br/>
- <br/>
-<img src="./img/Screenshot (12).png" alt="mobile" width="100">
+### mobile view <br />
+<img src="./img/Screenshot (12).png" alt="mobile" width="250">
 
 
 
