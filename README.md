@@ -2,13 +2,12 @@
 ![stars](https://img.shields.io/github/stars/Minakshi-Verma/covid-tracker) [![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://img.shields.io/github/license/Minakshi-Verma/covid-tracker) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) ![Maintainability](https://api.codeclimate.com/v1/badges/39c95c84b11b91c11a7b/maintainability) ![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fminakshi_12) 
  
 
-Covid tracker provides the records of COVID-19 cases globally as well as based on a selected country. We are fetching live COVID-19 data (from a public API) for the number of infected, recovered, and death cases. In addition to numeric data, results are diplayed on charts to provide better visibibility. The application is fully responsive and styled using material UI.
+Covid tracker provides the records of COVID-19 cases globally as well as based on a selected country. We are fetching live COVID-19 data (from a public API) for the number of infected, recovered, and death cases. In addition to numeric data, results are diplayed on charts to provide better visibility. The application is fully responsive and styled using material UI.
  
  ### Desktop view <br />
-<img src="./img/Screenshot (10).png" alt="desktop" width="600">
- <br/>
+<img src="./img/Screenshot (10).png" alt="desktop" width="500">
 
-### mobile view <br />
+### Mobile view <br />
 <img src="./img/Screenshot (12).png" alt="mobile" width="250">
 
 
