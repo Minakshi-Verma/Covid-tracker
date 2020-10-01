@@ -4,7 +4,8 @@
 
 Covid tracker provides the records of COVID-19 cases globally as well as based on a selected country. We are fetching live COVID-19 data (from a public API) for the number of infected, recovered, and death cases. In addition to numeric data, results are diplayed on charts to provide better visibibility.
 
-<img src="./img/Screenshot(10)">
+<img src="./img/Screenshot(10).png">
+
 
 ### Deployed site: https://covid-tracker-3yff7fz1f.vercel.app/
 
