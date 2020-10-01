@@ -1,4 +1,4 @@
-# Covid-tracker
+# covid-tracker
 
 ## Tech Stack
 React || Material UI || CSS || Vercel 
