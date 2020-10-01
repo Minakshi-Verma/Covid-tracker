@@ -1,7 +1,12 @@
 # covid-tracker
+## Deployed site
+https://covid-tracker-3yff7fz1f.vercel.app/
+
+
+
 
 ## Tech Stack
-React || Material UI || CSS || Vercel 
+React || CSS || Material UI ||  Vercel 
 
 ### Initialize the project using create-react-app ./
 
