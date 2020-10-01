@@ -4,7 +4,9 @@ import React from 'react';
 // import CountryPicker from './components/CountryPicker/CountryPicker'
 import { Cards, Chart, CountryPicker} from './components'
 import styles from './App.module.css'
-import { fetchData, fetchDataByCountry} from './api'
+import { fetchData, fetchDataByCountry} from './api';
+
+import coronaImage from '../src/images/image.png';
 
 
 class App extends React.Component {
@@ -39,9 +41,11 @@ class App extends React.Component {
             //while using App.module.css , we use dynamic className in the following format.
             //.module ensures , styles are applied exactly where they are intended for.
             <div className = {styles.container}>
+                <img className= {styles.image} src = {coronaImage} alt ="COVID-19"/>
                <Cards  data = {data}  />
-               <Chart data = {data} country= {country}  />
                <CountryPicker handleChangeCountry= {this.handleChangeCountry}/>
+               <Chart data = {data} country= {country}  />
+              
             </div>
         )
     }
