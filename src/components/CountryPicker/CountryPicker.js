@@ -16,11 +16,11 @@ const CountryPicker = (props) =>{
         fetchAPI()
     },[setFetchCountries])
     console.log("fetchcountries", fetchedCountries)
-
+    //for Global option, value should be "", since no country is chosen
     return(
        <FormControl className={styles.formControl}>
            <NativeSelect onClick={(e)=>props.handleChangeCountry(e.target.value)}>
-            <option value ="global">Global</option>
+            <option value ="">Global</option> 
                 {fetchedCountries.map((country, i)=><option key = {i} value={country}>{country}</option>)}
            </NativeSelect>
        </FormControl>
